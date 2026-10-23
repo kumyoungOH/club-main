@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eef3f8">
+  <meta name="description" content="법무연수원 동호회를 소개합니다. 원하는 동호회를 선택하면 해당 홈페이지로 이동합니다.">
+  <title>법무연수원 동호회 안내</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      background: #eef3f8;
+      color: #222;
+      font-family: Arial, "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    }
+    main { width: 100%; padding: 0; }
+    .poster {
+      position: relative;
+      width: min(100%, 720px);
+      margin: 0 auto;
+      line-height: 0;
+    }
+    .poster img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .club-link {
+      position: absolute;
+      display: block;
+      border-radius: 18px;
+      line-height: normal;
+      color: transparent;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .club-link:focus-visible {
+      outline: 4px solid #145ea8;
+      outline-offset: 2px;
+      background: rgba(255,255,255,.18);
+    }
+    .club-link:active { background: rgba(255,255,255,.12); }
+    /* 좌표는 720 × 1440 원본 포스터 기준 백분율입니다. */
+    .tennis    { left: 2.8%;  top: 25.8%; width: 27.8%; height: 16.4%; }
+    .kendo     { left: 33.0%; top: 20.0%; width: 27.0%; height: 17.5%; }
+    .futsal    { left: 69.2%; top: 27.0%; width: 29.0%; height: 16.8%; }
+    .gukgung   { left: 2.8%;  top: 50.0%; width: 27.5%; height: 16.5%; }
+    .golf      { left: 36.0%; top: 43.0%; width: 27.5%; height: 16.2%; }
+    .bicycle   { left: 71.0%; top: 48.0%; width: 27.0%; height: 17.0%; }
+    .badminton { left: 3.0%;  top: 73.0%; width: 27.0%; height: 16.5%; }
+    .tabletennis { left: 40.0%; top: 65.5%; width: 27.0%; height: 17.0%; }
+    .running   { left: 74.0%; top: 73.0%; width: 25.0%; height: 16.0%; }
+    @media (min-width: 721px) {
+      .poster { box-shadow: 0 4px 24px rgba(35, 54, 76, .08); }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="poster" aria-label="법무연수원 동호회 선택 포스터">
+      <img src="images/club-poster.png" alt="법무연수원 동호회 안내 포스터. 테니스, 검도, 풋살, 국궁, 골프, 자전거, 배드민턴, 탁구, 러닝 동호회가 소개되어 있습니다.">
+      <a class="club-link tennis" href="https://tennis-club-homepage.pages.dev" aria-label="테니스 동호회 홈페이지로 이동" title="테니스"></a>
+      <a class="club-link kendo" href="https://chdanrhk.canva.link/kendo" aria-label="검도 동호회 홈페이지로 이동" title="검도"></a>
+      <a class="club-link futsal" href="https://chdanrhk.canva.link/futsal" aria-label="풋살 동호회 홈페이지로 이동" title="풋살"></a>
+      <a class="club-link gukgung" href="https://chdanrhk.canva.link/gukgung" aria-label="국궁 동호회 홈페이지로 이동" title="국궁"></a>
+      <a class="club-link golf" href="https://chdanrhk.canva.link/golf" aria-label="골프 동호회 홈페이지로 이동" title="골프"></a>
+      <a class="club-link bicycle" href="https://chdanrhk.canva.link/bicycle" aria-label="자전거 동호회 홈페이지로 이동" title="자전거"></a>
+      <a class="club-link badminton" href="https://chdanrhk.canva.link/badminton" aria-label="배드민턴 동호회 홈페이지로 이동" title="배드민턴"></a>
+      <a class="club-link tabletennis" href="https://chdanrhk.canva.link/tabletennis" aria-label="탁구 동호회 홈페이지로 이동" title="탁구"></a>
+      <a class="club-link running" href="https://chdanrhk.canva.link/running" aria-label="러닝 동호회 홈페이지로 이동" title="러닝"></a>
+    </div>
+  </main>
+</body>
+</html>
