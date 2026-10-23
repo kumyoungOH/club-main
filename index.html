@@ -14,7 +14,18 @@
       color: #222;
       font-family: Arial, "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
     }
-    main { width: 100%; padding: 0; }
+    main { width: 100%; padding: 0 18px 36px; }
+    .page-title {
+      margin: 0 auto;
+      padding: 28px 12px 20px;
+      text-align: center;
+      font-size: clamp(26px, 4.3vw, 48px);
+      line-height: 1.2;
+      font-weight: 800;
+      letter-spacing: .04em;
+      color: #2b6e9d;
+      text-shadow: 1px 2px 0 rgba(255,255,255,.85);
+    }
     .poster {
       position: relative;
       width: min(100%, 720px);
@@ -52,12 +63,18 @@
     .tabletennis { left: 40.0%; top: 65.5%; width: 27.0%; height: 17.0%; }
     .running   { left: 74.0%; top: 73.0%; width: 25.0%; height: 16.0%; }
     @media (min-width: 721px) {
+      main { padding-top: 4px; }
       .poster { box-shadow: 0 4px 24px rgba(35, 54, 76, .08); }
+    }
+    @media (max-width: 480px) {
+      main { padding: 0 8px 20px; }
+      .page-title { padding: 22px 6px 16px; }
     }
   </style>
 </head>
 <body>
   <main>
+    <h1 class="page-title">법무연수원 동호회</h1>
     <div class="poster" aria-label="법무연수원 동호회 선택 포스터">
       <img src="images/club-poster.png" alt="법무연수원 동호회 안내 포스터. 테니스, 검도, 풋살, 국궁, 골프, 자전거, 배드민턴, 탁구, 러닝 동호회가 소개되어 있습니다.">
       <a class="club-link tennis" href="https://tennis-club-homepage.pages.dev" aria-label="테니스 동호회 홈페이지로 이동" title="테니스"></a>
